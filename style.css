@@ -196,6 +196,70 @@ body {
     font-weight: 500;
 }
 
+.comments > div {
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.left {
+    display: flex;
+    font-size: 14px;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-content strong {
+    font-weight: 500;
+    color: #979797;
+}
+
+.comment-content strong:first-child {
+    color: black;
+}
+
+.comments img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 5px;
+}
+
+.insert-comment {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+    margin: 0 4px;
+    padding: 4px;
+    font-size: 22px;
+}
+
+.insert-comment ion-icon {
+    color: #B2DFFC;
+}
+
+.insert-comment ion-icon:hover {
+    color: #0095F6;
+    transition: 300ms;
+}
+
+input {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+  }
+
 /* Sidebar settings */
 h3 {
     font-size: 14px;
@@ -321,7 +385,7 @@ h3 {
 
     .stories {
         margin: 0;
-        border: 0;
+        border: none;
         background-color: inherit;
     }
 
@@ -330,6 +394,10 @@ h3 {
     }
 
     .posts > div > img {
+        width: 100%;
+    }
+
+    .posts > div > video {
         width: 100%;
     }
 
